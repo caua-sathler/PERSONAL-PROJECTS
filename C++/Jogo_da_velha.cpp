@@ -43,7 +43,7 @@ void movimento_computador(std::string tab[][3], std::string w) { //função resp
     std::cout << "Pressione Enter para o computador executar sua jogada.\n"; //aguarda o jogador pressionar uma tecla para dar continuidade ao programa. Adicionei para facilitar a vizualização.
     std::cin.ignore(); 
     std::cin.get();
-    std::cout << "Tabuleiro após a jogada do computador:\n";
+    std::cout << "Tabuleiro apos a jogada do computador:\n";
     gerar_tabuleiro(tab); //exibe o tabuleiro após a jogada do computador.
 }
 
@@ -65,7 +65,7 @@ bool vitoria(std::string tab[][3], std::string simbolo) { //função que verific
 
 bool em_andamento(std::string tab[][3], std::string simbolo_jogador, std::string simbolo_pc) { //função que verifica se o jogo ainda está em andamento.
     if(vitoria(tab, simbolo_jogador)) {
-        std::cout << "PARABENS! VOCÊ VENCEU!\n"; 
+        std::cout << "PARABENS! VOCE VENCEU!\n"; 
         return false; //caso o jogador vença, o jogo é interrompido e é exibido a mensagem.
     }
     if(vitoria(tab, simbolo_pc)) {
@@ -93,7 +93,7 @@ int main() {
     std::cout << "BEM-VINDO AO JOGO DA VELHA!\n";
 
     do {
-        std::cout << "Pressione 'J' para jogar e 'S' para sair!\n"; //comando de controle
+        std::cout << "Pressione 'J' para jogar e 'S' para sair! "; //comando de controle
         std::cin >> controle; 
         controle = toupper(controle);
     } while (controle != 'J' && controle != 'S');
