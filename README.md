@@ -1,2 +1,1 @@
-Esse repositório contêm trabalhos de projetos pessoais desenvolvidos
-fora da universidade com o objetivo de aprendizagem.
+Repository focused on work and projects developed outside the academic track of undergraduate studies with the aim of learning.
